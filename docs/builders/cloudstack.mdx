@@ -209,6 +209,17 @@ The available variables are:
 
 Here is a basic example.
 
+</Tab>
+</Tabs>
+
+## Basic Example: Private OpenStack cloud
+
+This example builds an Ubuntu 14.04 image on a private OpenStack cloud, powered
+by Metacloud.
+
+<Tabs>
+<Tab heading="JSON">
+
 ```json
 {
   "type": "cloudstack",
@@ -233,3 +244,37 @@ Here is a basic example.
   "template_os": "Other PV (64-bit)"
 }
 ```
+
+</Tab>
+
+<Tab heading="HCL2">
+
+```hcl
+
+source "cloudstack" "example" {
+  api_key                   = "YOUR_API_KEY"
+  api_url                   = "https://cloudstack.company.com/client/api"
+  disk_offering             = "Small - 20GB"
+  hypervisor                = "KVM"
+  network                   = "management"
+  secret_key                = "YOUR_SECRET_KEY"
+  service_offering          = "small"
+  source_iso                = "CentOS-7.0-1406-x86_64-Minimal"
+  ssh_username              = "root"
+  template_display_text     = "Centos7-x86_64 KVM Packer"
+  template_featured         = true
+  template_name             = "Centos7-x86_64-KVM-Packer"
+  template_os               = "Other PV (64-bit)"
+  template_password_enabled = true
+  template_scalable         = true
+  zone                      = "NL1"
+}
+
+build {
+  sources = ["source.cloudstack.example"]
+}
+
+```
+
+</Tab>
+</Tabs>
