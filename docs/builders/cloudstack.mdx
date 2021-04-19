@@ -20,6 +20,22 @@ instance after launching it and then creates a new template from that instance.
 The builder does _not_ manage templates. Once a template is created, it is up
 to you to use it or delete it.
 
+This builder is part of the
+[Cloudstack plugin](https://github.com/hashicorp/packer-plugin-cloudstack).
+To install this plugin using `packer init`, add the following Packer block to
+your hcl template:
+
+```
+packer {
+  required_plugins {
+    cloudstack = {
+      version = ">= 0.0.1"
+      source  = "github.com/hashicorp/cloudstack"
+    }
+  }
+}
+```
+
 ## Configuration Reference
 
 There are many configuration options available for the builder. They are
