@@ -253,5 +253,4 @@ func (s *stepSetupNetworking) Cleanup(state multistep.StateBag) {
 	}
 
 	ui.Message("Networking has been cleaned!")
-	return
 }

@@ -219,7 +219,6 @@ func (s *stepCreateInstance) Cleanup(state multistep.StateBag) {
 	}
 
 	ui.Message("Instance has been deleted!")
-	return
 }
 
 // generateUserData returns the user data as a base64 encoded string.
