@@ -1,7 +1,7 @@
 packer {
   required_plugins {
     cloudstack = {
-      version = ">= 0.0.1"
+      version = ">= 1.0.0"
       source  = "github.com/hashicorp/cloudstack"
     }
   }
