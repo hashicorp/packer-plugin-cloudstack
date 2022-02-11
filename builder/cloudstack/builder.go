@@ -4,12 +4,12 @@ import (
 	"context"
 	"fmt"
 
+	"github.com/apache/cloudstack-go/v2/cloudstack"
 	"github.com/hashicorp/hcl/v2/hcldec"
 	"github.com/hashicorp/packer-plugin-sdk/communicator"
 	"github.com/hashicorp/packer-plugin-sdk/multistep"
 	"github.com/hashicorp/packer-plugin-sdk/multistep/commonsteps"
 	packersdk "github.com/hashicorp/packer-plugin-sdk/packer"
-	"github.com/apache/cloudstack-go/v2/cloudstack"
 )
 
 const BuilderId = "packer.cloudstack"

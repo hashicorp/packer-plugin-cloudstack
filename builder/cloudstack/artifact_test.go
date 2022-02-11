@@ -3,8 +3,8 @@ package cloudstack
 import (
 	"testing"
 
-	packersdk "github.com/hashicorp/packer-plugin-sdk/packer"
 	"github.com/apache/cloudstack-go/v2/cloudstack"
+	packersdk "github.com/hashicorp/packer-plugin-sdk/packer"
 )
 
 const templateID = "286dd44a-ec6b-4789-b192-804f08f04b4c"
