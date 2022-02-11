@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/packer-plugin-sdk/multistep"
 	"github.com/hashicorp/packer-plugin-sdk/multistep/commonsteps"
 	packersdk "github.com/hashicorp/packer-plugin-sdk/packer"
-	"github.com/xanzy/go-cloudstack/cloudstack"
+	"github.com/apache/cloudstack-go/v2/cloudstack"
 )
 
 const BuilderId = "packer.cloudstack"

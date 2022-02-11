@@ -3,9 +3,9 @@ module github.com/hashicorp/packer-plugin-cloudstack
 go 1.17
 
 require (
+	github.com/apache/cloudstack-go/v2 v2.12.0
 	github.com/hashicorp/hcl/v2 v2.11.1
 	github.com/hashicorp/packer-plugin-sdk v0.2.11
-	github.com/xanzy/go-cloudstack v2.4.1+incompatible
 	github.com/zclconf/go-cty v1.10.0
 )
 
@@ -25,6 +25,7 @@ require (
 	github.com/gofrs/flock v0.8.1 // indirect
 	github.com/gofrs/uuid v4.0.0+incompatible // indirect
 	github.com/golang/groupcache v0.0.0-20210331224755-41bb18bfe9da // indirect
+	github.com/golang/mock v1.6.0 // indirect
 	github.com/golang/protobuf v1.5.2 // indirect
 	github.com/golang/snappy v0.0.4 // indirect
 	github.com/google/go-cmp v0.5.6 // indirect

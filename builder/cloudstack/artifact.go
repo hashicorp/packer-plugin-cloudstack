@@ -5,7 +5,7 @@ import (
 	"log"
 	"strings"
 
-	"github.com/xanzy/go-cloudstack/cloudstack"
+	"github.com/apache/cloudstack-go/v2/cloudstack"
 )
 
 // Artifact represents a CloudStack template as the result of a Packer build.

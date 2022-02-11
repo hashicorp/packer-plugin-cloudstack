@@ -8,7 +8,7 @@ import (
 
 	"github.com/hashicorp/packer-plugin-sdk/multistep"
 	packersdk "github.com/hashicorp/packer-plugin-sdk/packer"
-	"github.com/xanzy/go-cloudstack/cloudstack"
+	"github.com/apache/cloudstack-go/v2/cloudstack"
 )
 
 type stepPrepareConfig struct{}
