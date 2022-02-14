@@ -8,10 +8,10 @@ import (
 	"net"
 	"strings"
 
+	"github.com/apache/cloudstack-go/v2/cloudstack"
 	"github.com/hashicorp/packer-plugin-sdk/multistep"
 	packersdk "github.com/hashicorp/packer-plugin-sdk/packer"
 	"github.com/hashicorp/packer-plugin-sdk/template/interpolate"
-	"github.com/xanzy/go-cloudstack/cloudstack"
 )
 
 // userDataTemplateData represents variables for user_data interpolation
