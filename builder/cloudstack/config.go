@@ -58,8 +58,7 @@ type Config struct {
 	// instance. This option is only available (and also required) when using
 	// source_iso.
 	DiskOffering string `mapstructure:"disk_offering" required:"false"`
-	// The size (in GB) of the root disk of the new
-	// instance. This option is only available when using source_template.
+	// The size (in GB) of the root disk of the new instance.
 	DiskSize int64 `mapstructure:"disk_size" required:"false"`
 	// If `true` make a call to the CloudStack API, after loading image to
 	// cache, requesting to check and detach ISO file (if any) currently

@@ -58,6 +58,7 @@ func (s *stepCreateInstance) Run(ctx context.Context, state multistep.StateBag) 
 	if config.SourceISO != "" {
 		p.SetDiskofferingid(config.DiskOffering)
 		p.SetHypervisor(config.Hypervisor)
+		p.SetSize(config.DiskSize)
 	}
 
 	// If we use a template, set the root disk size.
