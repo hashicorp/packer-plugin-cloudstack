@@ -2,3 +2,4 @@ main
 dist/*
 packer-plugin-cloudstack
 .docs
+crash.log
