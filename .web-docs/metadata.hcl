@@ -2,7 +2,7 @@
 # https://github.com/hashicorp/integration-template#metadata-configuration
 integration {
   name = "CloudStack"
-  description = "TODO"
+  description = "The cloudstack plugin can be used with HashiCorp Packer to create custom images on Apache CloudStack."
   identifier = "packer/BrandonRomano/cloudstack"
   component {
     type = "builder"
