@@ -1,6 +1,6 @@
 module github.com/hashicorp/packer-plugin-cloudstack
 
-go 1.18
+go 1.19
 
 require (
 	github.com/apache/cloudstack-go/v2 v2.12.0
