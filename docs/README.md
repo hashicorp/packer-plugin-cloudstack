@@ -30,7 +30,7 @@ The Cloudstack plugin allows Packer to interface with [cloudstack](https://cloud
 
 #### Builders
 
-- [builder](/packer/integrations/hashicorp/cloudstack/latest/components/builder/cloudstack) -  Creates new templates for use
+- [cloudstack](/packer/integrations/hashicorp/cloudstack/latest/components/builder/cloudstack) -  Creates new templates for use
   with CloudStack. The builder takes either an ISO or an existing template as its
   source, runs any provisioning necessary on the instance after launching it and
   then creates a new template from that instance.
